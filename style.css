@@ -1,62 +1,133 @@
-* {
-    display: block;
-    position: relative;
-    color: black;
-    font-family: Arial, sans-serif;
+*{
+    box-sizing:border-box
 }
 
-body {
-    background-color: #f0f0f0;
-    padding: 20px;
+body{
+    margin:0;
+    background:#f7f7f8;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#111;
+    padding:24px
 }
+
+form{
+    display:inline-block;
+    text-align:left;padding:16px;
+    border:1px solid #ddd;
+    border-radius:6px
+}
+
+input{
+    display:block;
+    width:250px;
+    padding:8px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:4px
+}
+
+button{
+    padding:8px 12px;
+    background:#0069ff;
+    color:#fff;
+    border:none;
+    border-radius:4px;
+    cursor:pointer
+}
+
 h2 {
     text-align: center;
     color: #333;
 }
-h3 {
-    text-align: center;
-    color: #555;
-}
 form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: 20px auto;
+    background:#fff;
+    padding:20px;
+    border-radius:6px;
+    box-shadow:none;
+    max-width:none;
+    margin:0 auto;
+    text-align:center
 }
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    font-size:14px
 }
 input[type="text"], input[type="password"] {
-    width: 100%;    
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width:100%;
+    padding:8px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:4px
+}
+
+/* helper / error styles */
+.help {
+    font-size: 0.875rem;
+    color: #555;
+    margin-bottom: 6px;
+}
+.error {
+    color: #b00020;
+    min-height: 1.25em;
+    margin-bottom: 8px;
+}
+
+.password-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.forgot {
+    font-size: 0.9rem;
 }
 input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    display:block;
+    width:250px;
+    padding:8px;
+    background:#0069ff;
+    color:#fff;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    font-weight:normal
 }
 input[type="submit"]:hover {
-    background-color: #45a049;
+    opacity:.95
 }
 
 button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin: 10px;
+  background:transparent;
+  border:0;
+  padding:0;
+  margin:0;
+  cursor:pointer
 }
 button img {
-    width: 30px;
-    height: 30px;
+  width:28px;
+  height:28px
 }
+.meta{
+    margin-top:12px;
+    color:#666;
+    font-size:0.9rem;
+    display:flex;
+    align-items:center;
+    gap:8px
+}
+
+.small-link{
+    font-size:0.85rem;
+    margin-left:8px;
+    color:#0073e6
+}
+
+.row{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:6px 0
+
+}
+@media(max-width:420px){body{padding:12px}form{margin:12px;padding:14px}}

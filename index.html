@@ -5,41 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
+<body>
 </head>
 
-<body>
     <h1>Login Form</h1>
 
-    <h2>Welcome Back!</h2>
+    <form id="loginForm">
+        <label>Username<br>
+            <input id="username" name="username" type="text" placeholder="username" required>
+        </label>
 
-    <h3>Login</h3>
-    <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required placeholder="Enter Username"><br><br>
-        <label for="password">Password:</label>
-            <a href="#">Forgot Password</a>
-        <input type="password" id="password" name="password" required placeholder="Enter Password" minlength="6" maxlength="8"><br><br> //6-8 characters only
-        <input type="submit" value="Login">
+        <label>Password<br>
+            <input id="password" name="password" type="password" placeholder="password" required>
+        </label>
+
+        <label><input id="remember" type="checkbox"> Remember me</label>
+
+        <button type="submit">Login</button>
     </form>
 
-    <p><hr>Or Login with <hr></p>
-    <button type="button">
-        <img src="assets/google.png" alt="Google">
-    </button>
-    <button type="button">
-        <img src="assets/fb.png" alt="Facebook">
-    </button>
-
-    <label for="remember">Remember Me</label>
-    <input type="checkbox" id="remember" name="remember">
-
-    <p>Don't have an account? <a href="#">Sign Up</a></p>
-
-</body>
-
-<footer>
     <p>&copy; Elaine L. Paras. BSIT 2B.</p>
-</footer>
+    </footer>
+</body>
 
 </html>
