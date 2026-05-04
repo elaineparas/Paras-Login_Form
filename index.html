@@ -5,28 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
-    
-<body>
 </head>
+<body>
+    <div class="login-container">
+        <h1>Welcome Back!</h1>
+        <p class="subtitle">Please enter your details</p>
+        
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username">
+                <small class="error-msg" id="userError"></small>
+            </div>
 
-    <h1>Login Form</h1>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <small class="error-msg" id="passError"></small>
+            </div>
 
-    <form id="loginForm">
-        <label>Username<br>
-            <input id="username" name="username" type="text" placeholder="username" required>
-        </label>
+            <div class="form-options">
+                <label><input type="checkbox"> Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
 
-        <label>Password<br>
-            <input id="password" name="password" type="password" placeholder="password" required>
-        </label>
+            <button type="submit" id="loginBtn">Log In</button>
+            <div id="successMsg" class="success-msg"></div>
+        </form>
 
-        <label><input id="remember" type="checkbox"> Remember me</label>
+        <div class="divider">
+            <span>Or log in with</span>
+        </div>
 
-        <button type="submit">Login</button>
-    </form>
+        <div class="social-login">
+            <button class="social-btn"><img src="assets/google.png" alt="Google"></button>
+            <button class="social-btn"><img src="assets/fb.png" alt="Facebook"></button>
+        </div>
 
-    <p>&copy; Elaine L. Paras. BSIT 2B.</p>
+        <p class="signup-link">Don't have an account? <a href="#">Sign Up</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Elaine L. Paras. BSIT 2B.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
