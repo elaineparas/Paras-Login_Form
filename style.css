@@ -76,6 +76,27 @@ input:focus {
     padding-right: 60px; 
 }
 
+.strength-meter {
+    height: 4px;
+    width: 100%;
+    background-color: #ddd;
+    margin-top: 8px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+#strengthBar {
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+#strengthText {
+    font-size: 0.75rem;
+    display: block;
+    margin-top: 4px;
+}
+
 button[type="submit"] {
     width: 100%;
     padding: 12px;
