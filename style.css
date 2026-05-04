@@ -65,16 +65,15 @@ input:focus {
 #togglePassword {
     position: absolute;
     right: 10px;
-    background: none;
+    background: transparent;
     border: none;
     color: #007BFF;
-    font-size: 0.8rem;
     cursor: pointer;
-    padding: 5px;
+    font-weight: bold;
 }
 
 #password {
-    padding-right: 50px; 
+    padding-right: 60px; 
 }
 
 button[type="submit"] {
