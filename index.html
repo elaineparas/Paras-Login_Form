@@ -20,8 +20,11 @@
 
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter your password">
-                <small class="error-msg" id="passError"></small>
+                <div class="password-wrapper">
+                    <input type="password" id="password" autocomplete="current-password">
+                    <button type="button" id="togglePassword">Show</button>
+                </div>
+                <small class="error-msg" id="passError" aria-live="polite"></small>
             </div>
 
             <div class="form-options">
@@ -38,8 +41,8 @@
         </div>
 
         <div class="social-login">
-            <button class="social-btn" link src="https://myaccount.google.com"><img src="assets/google.png" alt="Google"></button>
-            <button class="social-btn" link src="https://www.facebook.com"><img src="assets/fb.png" alt="Facebook"></button>
+            <a href="https://myaccount.google.com" class="social-btn"><img src="assets/google.png" alt="Google"></a>
+            <a href="https://www.facebook.com" class="social-btn"><img src="assets/fb.png" alt="Facebook"></a>
         </div>
 
         <p class="signup-link">Don't have an account? <a href="#">Sign Up</a></p>

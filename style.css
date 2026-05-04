@@ -56,6 +56,27 @@ input:focus {
     margin-bottom: 20px;
 }
 
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #007BFF;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#password {
+    padding-right: 50px; 
+}
+
 button[type="submit"] {
     width: 100%;
     padding: 12px;
